@@ -1,5 +1,5 @@
 /**
- * Created by Mai on 7/1/2014.
+ * Created by Mai on 7/1/2014. Muhaha
  */
 document.getElementById("step1").addEventListener("mouseout",nextfunc);
 
