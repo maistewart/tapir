@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Tapir Designs</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body >
+
+<header>
+    <div class="header">
+        <img class="header-pic" src="img/banner.png">
+    </div>
+        <ul>
+            <li><a href="#" class="first" id="contact"><p class="link">Contact</p></a></li>
+            <li><a href="#" class="mult" id="services"><p class="link">Services</p></a></li>
+            <li><a href="#" class="mult" id="people"><p class="link">People</p></a></li>
+        </ul>
+</header>
+
+<div class="content" id="ct">
+    <div class="block1">
+    <h1>Web Design & Development</h1>
+    <p class="descrip">Tapir Designs is an agile development team that builds quality web apps from the ground up.<br>
+        We handle coding and deployment details, letting you design your app the way you want.</p>
+    <div class="steps">
+      <img class="step1" id="step1" src="img/step1.png">
+      <img class="step2" src="img/step2.png">
+      <img class="step3" src="img/step3.png">
+      <img class="step4" src="img/step4.png">
+    </div>
+
+    </div>
+    <div id="startform">
+        <h2>Something about the Form</h2>
+        <p class="descrip">Tell us about your organization blah, blah, blah</p>
+        <p id="test">Hello</p>
+    </div>
+
+</div>
+<div id="plan">
+    <p>Stuff</p>
+</div>
+    <img class="foot" src="img/land.png">
+    <a class="goform" href="#startform"><img class="formpic" src="img/arrow.png"></a>
+</body>
+
+<script>
+    document.getElementById("step1").addEventListener("mouseout",nextfunc);
+
+    function nextfunc(){
+        document.getElementById("plan").style.opacity = 0;
+    }
+    document.getElementById("step1").addEventListener("mouseover",myfunc);
+
+    function myfunc(){
+        document.getElementById("plan").style.opacity = 0.7;
+    }
+
+
+</script>
+</html>

@@ -1,0 +1,197 @@
+body {
+    background-image: url("img/siteback.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}
+
+header {
+    height:100px;
+    background-image: url(img/header.jpg);
+    width: 100%;
+    position: fixed;
+    right:0;
+    top:0;
+    z-index: 1;
+    opacity:0.9;
+}
+.header-pic {
+    margin-top:35px;
+    float:left;}
+
+ul {
+
+    list-style: none;
+    margin:0;
+    padding: 0;
+    display: block;
+    width:500px;
+    float:right;
+
+}
+
+ul li {
+    float:right;
+}
+
+ul li a{
+    display:block;
+    text-decoration: none;
+    margin-top:5px;
+    height:84px;
+    width:113px;
+    border-style: solid;
+    border-width: 2px;
+    border-color:lightgray;
+    border-radius: 1em;
+    opacity:0.7;
+}
+
+ul li a.first {
+    margin-right: 30px;
+    margin-left:15px;
+}
+
+ul li a.mult {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+ul li a:hover {
+    border-color: white;
+    color: white;
+    background-color: white;
+    opacity: 0.5;
+}
+
+p.link {
+    font-family: "Century Gothic", Geneva, sans-serif;
+    height:84px;
+    width:113px;
+    color: lightgray;
+    text-align: center;
+    bottom:5px;
+    padding-top:30px;
+    margin:0;
+}
+
+p.link:hover {
+    color: black;
+    opacity: 1;
+}
+
+
+div.content {
+    margin-top:120px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+div.block1{
+    height:470px;
+}
+h1, h2 {
+    text-align:center;
+    font-family: "Century Gothic", Geneva, sans-serif;
+    color: white;
+    opacity: 0.75;
+    font-size: 4em;
+    font-weight:500;
+    margin-bottom:2px;
+}
+
+p.descrip {
+    text-align: center;
+    font-family:  "Century Gothic", Geneva, sans-serif;
+    margin-top:20px;
+    opacity: 0.85;
+    margin-bottom:8px;
+    font-size: 1.25em;
+    color:lightgray;
+}
+
+div.steps {
+    width:808px;
+    height:245px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+img.step1 {
+    float:left;
+    opacity:0.75;
+}
+img.step1:hover {
+    opacity:1;
+}
+img.step2 {
+    float:left;
+    opacity:0.75;
+}
+img.step2:hover{
+    opacity:1;
+}
+img.step3 {
+    float:left;
+    opacity:0.75;
+}
+img.step3:hover {
+    opacity:1;
+}
+img.step4 {
+    float: left;
+    opacity:0.75;
+}
+img.step4:hover {
+    opacity:1;
+}
+div.des {
+    margin-top: 100px;
+    clear:left;
+}
+p.descrip#text {
+     margin-top: 50px;
+}
+
+a.goform {
+    display:block;
+    height:100px;
+    width: 80px;
+    position:absolute;
+    top:445px;
+    left:170px;
+    margin-top: 10px;
+    opacity:0.7;
+    clear:left;
+    margin-right:0;
+}
+a.goform:hover {
+    opacity: 1;
+}
+
+div#startform {
+    clear:left;
+    margin-top: 80px;
+    height:540px;
+}
+
+div#plan {
+    width:200px;
+    height: 300px;
+    position: absolute;
+    background-color: white;
+    border-width: 2px;
+    top:170px;
+    left:1190px;
+    opacity:0;
+    border-radius: 1em;
+}
+
+img.foot {
+    position: fixed;
+    top:458px;
+    left:0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
