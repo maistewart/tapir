@@ -12,11 +12,11 @@ header {
     position: fixed;
     right:0;
     top:0;
-    z-index: 1;
+    z-index: 5;
     opacity:0.9;
 }
 .header-pic {
-    margin-top:35px;
+    margin-top:25px;
     float:left;}
 
 ul {
@@ -35,16 +35,13 @@ ul li {
 }
 
 ul li a{
-    display:block;
     text-decoration: none;
-    margin-top:5px;
-    height:84px;
+    margin-top:9px;
+    /*height:80px;
     width:113px;
-    border-style: solid;
     border-width: 2px;
-    border-color:lightgray;
     border-radius: 1em;
-    opacity:0.7;
+    opacity:0.7;*/
 }
 
 ul li a.first {
@@ -57,27 +54,34 @@ ul li a.mult {
     margin-left: 15px;
 }
 
-ul li a:hover {
-    border-color: white;
-    color: white;
-    background-color: white;
-    opacity: 0.5;
-}
-
-p.link {
+ p{
     font-family: "Century Gothic", Geneva, sans-serif;
-    height:84px;
+ }
+p.link {
+    /*height:80px;*/
     width:113px;
-    color: lightgray;
+    opacity:0.7;
+    /*border-style: solid;
+    border-radius: 1em;
+    border-color: black;
+    border-width: 2px;
+    background-color: black;*/
+    color:white;
     text-align: center;
     bottom:5px;
-    padding-top:30px;
     margin:0;
+   /* -webkit-box-shadow: 4px 4px 3px black;
+    -moz-box-shadow: 4px 4px 3px black;
+    box-shadow: 4px 4px 3px black;*/
 }
 
 p.link:hover {
-    color: black;
-    opacity: 1;
+    opacity:1;
+    /*border-color: black;
+    background-color: ;
+    -webkit-box-shadow: inset 4px 4px 3px #333333;
+    -moz-box-shadow: inset 4px 4px 3px #333333;
+    box-shadow: inset 4px 4px 3px #333333;*/
 }
 
 
@@ -93,58 +97,65 @@ div.block1{
 h1, h2 {
     text-align:center;
     font-family: "Century Gothic", Geneva, sans-serif;
-    color: white;
-    opacity: 0.75;
-    font-size: 4em;
-    font-weight:500;
+    color: black;
+    /*opacity: 0.75;*/
     margin-bottom:2px;
+}
+
+h1#title {
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 4em;
 }
 
 p.descrip {
     text-align: center;
-    font-family:  "Century Gothic", Geneva, sans-serif;
     margin-top:20px;
-    opacity: 0.85;
+    /*opacity: 0.85;*/
     margin-bottom:8px;
     font-size: 1.25em;
-    color:lightgray;
+    color:black;
 }
 
 div.steps {
-    width:808px;
-    height:245px;
+    width:888px;
+    height:250px;
     margin-right: auto;
     margin-left: auto;
+    border-radius: 1em;
 }
 
-img.step1 {
+div.step {
     float:left;
+    margin-right: 10px;
+    margin-left:10px;
+    margin-top:10px;
+}
+
+img.step {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+/*img.step#step1 {
+    margin-top:5px;
+}*/
+
+/*img.step:hover {
     opacity:0.75;
+}*/
+
+p.serv {
+    font-size: 2.5em;
+    opacity:0.6;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
 }
-img.step1:hover {
-    opacity:1;
-}
-img.step2 {
-    float:left;
-    opacity:0.75;
-}
-img.step2:hover{
-    opacity:1;
-}
-img.step3 {
-    float:left;
-    opacity:0.75;
-}
-img.step3:hover {
-    opacity:1;
-}
-img.step4 {
-    float: left;
-    opacity:0.75;
-}
-img.step4:hover {
-    opacity:1;
-}
+
+
 div.des {
     margin-top: 100px;
     clear:left;
@@ -155,36 +166,76 @@ p.descrip#text {
 
 a.goform {
     display:block;
-    height:100px;
-    width: 80px;
+    height:70px;
+    width: 56px;
     position:absolute;
-    top:445px;
-    left:170px;
+    top:578px;
+    left:30px;
     margin-top: 10px;
     opacity:0.7;
     clear:left;
     margin-right:0;
+    z-index:3;
 }
 a.goform:hover {
     opacity: 1;
 }
+
+div.arrow {
+    height:70px;
+    width: 56px;
+    border-radius: 1em;
+    background-image: url(img/arrow.png);
+}
+div.arrow:hover {
+    -webkit-box-shadow: inset 4px 4px 3px #666;
+    -moz-box-shadow: inset 4px 4px 3px #666;
+    box-shadow: inset 4px 4px 3px #666;
+}
+
 
 div#startform {
     clear:left;
     margin-top: 80px;
     height:540px;
 }
-
-div#plan {
-    width:200px;
-    height: 300px;
-    position: absolute;
+div.pop {
     background-color: white;
-    border-width: 2px;
-    top:170px;
-    left:1190px;
-    opacity:0;
+    width:200px;
+    height: 150px;
     border-radius: 1em;
+    position: absolute;
+    left: 50px;
+    top:280px;
+    background-color: white;
+    -webkit-box-shadow: inset 6px 6px 6px #666;
+    -moz-box-shadow: inset 6px 6px 6px #666;
+    box-shadow: inset 6px 6px 6px #666;
+    opacity: 0;
+}
+
+div.popright {
+    background-color: white;
+    width:200px;
+    height: 150px;
+    border-radius: 1em;
+    position: absolute;
+    left: 1090px;
+    top:280px;
+    background-color: white;
+    -webkit-box-shadow: inset 6px 6px 6px #666;
+    -moz-box-shadow: inset 6px 6px 6px #666;
+    box-shadow: inset 6px 6px 6px #666;
+    opacity: 0;
+
+}
+p.pl {
+    width: 190px;
+    margin-right: auto;
+    margin-left: auto;
+    padding:0;
+    color: #666;
+    text-align: center;
 }
 
 img.foot {
@@ -195,3 +246,46 @@ img.foot {
     margin-right: auto;
     max-width: 100%;
 }
+
+
+div.brand {
+    position:fixed;
+    top: 600px;
+    width:280px;
+    left:1050px;
+    z-index: 3;
+
+}
+p#test {
+    background-color:white;
+}
+img#phone {
+    float:left;
+    margin-top: 10px;
+    padding-right:5px;
+}
+
+p#numb {
+    float:left;
+    color:white;
+    padding-right: 20px;
+}
+a#fb {
+    float:left;
+    margin-top:5px;
+}
+
+a#tweet {
+    float:left;
+    margin-top: 9px;
+    margin-left: 20px;
+}
+
+.inf {
+    opacity:0.7;
+}
+
+.inf:hover {
+    opacity:1;
+}
+
